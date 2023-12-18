@@ -1,0 +1,55 @@
+* {
+    font-family: 'Work Sans', sans-serif;
+    /* Applique la police 'Work Sans' à tous les éléments de la page */
+}
+
+body {
+    background-image: url(background-pattern-desktop.svg);
+    /* Définit une image de fond pour le corps de la page */
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: hsl(275, 100%, 97%);
+    /* Définit la couleur de fond avec une nuance de hsl */
+    position: absolute;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    /* Centre le contenu de la page horizontalement et verticalement */
+}
+
+.parent {
+    padding: 30px;
+    width: 600px;
+    height: 600px;
+    background-color: hsl(0, 0%, 100%);
+    /* Définit la couleur de fond de l'élément parent avec une nuance de blanc */
+    text-align: left;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    /* Ajoute une ombre noire à la bordure de l'élément parent */
+}
+
+h1 {
+    display: inline-block;
+    margin-left: 15px;
+    font-weight: 700;
+    font-size: 64px;
+    /* Style pour les titres de niveau 1 (h1) */
+}
+
+table, tr, td {
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 700;
+    /* Applique la police 'Work Sans' aux éléments de tableau */
+}
+
+p {
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 400;
+    color: hsl(292, 6%, 59%);
+    /* Applique la police 'Work Sans' et une couleur spécifique aux paragraphes */
+}

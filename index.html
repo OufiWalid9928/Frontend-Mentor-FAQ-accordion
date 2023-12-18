@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+<link rel="stylesheet" href="style.css">
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800;900&family=Lexend+Deca:wght@100;200;300;400;500;600;700;800;900&family=Work+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+  <title>Frontend Mentor | FAQ accordion</title>
+
+
+</head>
+<body>
+<div class="parent">
+  <div><img src="icon-star.svg" class="icons"><h1>FAQs</h1></div>
+
+  <table>
+
+    <tr>
+        <td>What is Frontend Mentor, and how will it help me?</td>
+        <td><img src="icon-plus.svg" id="show-hide" onclick="toggleButtonState(this)"></td> 
+       
+    </tr>
+    <tr class="parag">
+      <td class="more"><p style="display: none; ">Frontend Mentor offers realistic coding challenges to help developers improve their frontend coding skills with projects in HTML, CSS, and JavaScript. It's suitable for all levels and ideal for portfolio building.</p></td>
+    </tr>
+    <tr>
+        <td>Is Frontend Mentor free?</td>
+        <td><img src="icon-plus.svg" id="show-hide"onclick="toggleButtonState(this)"></td>
+    </tr>
+    <tr class="parag">
+      <td class="more"><p style="display: none; ">Frontend Mentor offers realistic coding challenges to help developers improve their frontend coding skills with projects in HTML, CSS, and JavaScript. It's suitable for all levels and ideal for portfolio building.</p></td>
+    </tr>
+    <tr>
+        <td>Can I use Frontend Mentor projects in my portfolio?</td>
+        <td><img src="icon-plus.svg" id="show-hide" onclick="toggleButtonState(this)"></td>
+    </tr>
+    <tr class="parag">
+      <td class="more" ><p style="display: none; ">Frontend Mentor offers realistic coding challenges to help developers improve their frontend coding skills with projects in HTML, CSS, and JavaScript. It's suitable for all levels and ideal for portfolio building.</p></td>
+    </tr>
+    <tr>
+        <td>How can I get help if I'm stuck on a Frontend Mentor challenge?</td>
+        <td><img src="icon-plus.svg" id="show-hide"onclick="toggleButtonState(this)"></td>
+    </tr>
+    <tr class="parag">
+      <td class="more"><p style="display: none; ">Frontend Mentor offers realistic coding challenges to help developers improve their frontend coding skills with projects in HTML, CSS, and JavaScript. It's suitable for all levels and ideal for portfolio building.</p></td>
+    </tr>
+</table>
+
+</body>
+
+<script>
+  function toggleButtonState(element) {
+      // Trouver le paragraphe associé
+      var paragraphe = element.closest('tr').nextElementSibling.querySelector('.more p');
+
+      // Basculez la classe 'more' pour afficher/masquer le paragraphe
+      paragraphe.style.display = (paragraphe.style.display === 'none' || paragraphe.style.display === '') ? 'block' : 'none';
+
+      // Changer le src de l'image cliquée
+      element.src = (paragraphe.style.display === 'none') ? 'icon-plus.svg' : 'icon-minus.svg';
+  }
+</script>
+</html>
+
+
+
+
